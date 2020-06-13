@@ -1,0 +1,11 @@
+asadmin --host localhost --port 4848 create-jms-resource --restype javax.jms.Queue ReproductionQueue
+
+asadmin --host localhost --port 4848 create-jms-resource --restype javax.jms.Queue HistoryQueue
+
+asadmin --host localhost --port 4848 create-jms-resource --restype javax.jms.Queue AlarmQueue
+
+asadmin --host localhost --port 4848 create-jms-resource --restype javax.jms.Queue PlanerQueue
+
+asadmin --host localhost --port 4848 create-jms-resource --restype javax.jms.Queue ScheduleQueue
+
+Database connection URL: jdbc:mysql://localhost:3306/is1proj?zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false

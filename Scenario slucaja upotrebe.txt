@@ -1,0 +1,11 @@
+Scenario slučaja upotrebe: Kreiranje obaveze
+
+-	Potrebno je pokrenuti barem aplikacije KorisnicniUredjaj i Planer. 
+-	Korisnik iz menija bira opciju Dodaj obavezu i čeka dalja uputstva od sistema
+-	Nakon toga sistem traži od korisnika da unese podatke redom:
+-	1. Datum i vreme obaveze, nakon unosa sistem provera validnost datuma
+-	2. Opis obaveze
+-	3. Latitude koordinata lokacije
+-	4. Longitude koordinata lokacije
+-	Nakon što se unesu svi traženi podaci, aplikacija KorisnickiUredjaj kreira objekat entitetske klase Obaveze i šalje aplikaciji Planer zahtev za dodavanje nove obaveze u bazu podataka. Planer novu obavezu ubacuje u bazu podataka.
+-	Primer: Kreirati obavezu sa datumom 2019.7.5 15:00:00, opisom „Opis obaveze“, i adresom Tadeuša Košćuška 90 koja ima koordinate 44.826 i 20.455.
